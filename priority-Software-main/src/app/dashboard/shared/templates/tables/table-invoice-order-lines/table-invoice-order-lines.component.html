@@ -1,0 +1,243 @@
+<table mat-table [dataSource]="dataSourceInvoiceOrderLines">
+    <!-- id Column -->
+    <ng-container matColumnDef="id">
+        <th mat-header-cell *matHeaderCellDef> id. </th>
+        <td mat-cell *matCellDef="let element"> {{element.id}} </td>
+    </ng-container>
+    <!-- url Column -->
+    <ng-container matColumnDef="url">
+        <th mat-header-cell *matHeaderCellDef> url </th>
+        <td mat-cell *matCellDef="let element"> {{element.url}} </td>
+    </ng-container>
+
+    <!-- company Column -->
+    <ng-container matColumnDef="company">
+        <th mat-header-cell *matHeaderCellDef> company </th>
+        <td mat-cell *matCellDef="let element"> {{element.company}} </td>
+    </ng-container>
+
+    <!-- financialYear Column -->
+    <ng-container matColumnDef="financialYear">
+        <th mat-header-cell *matHeaderCellDef> financialYear </th>
+        <td mat-cell *matCellDef="let element"> {{element.financialYear}} </td>
+    </ng-container>
+
+    <!-- bookingPeriod Column -->
+    <ng-container matColumnDef="bookingPeriod">
+        <th mat-header-cell *matHeaderCellDef> bookingPeriod </th>
+        <td mat-cell *matCellDef="let element"> {{element.creationDate}} </td>
+    </ng-container>
+
+    <!-- bookingPeriodDates Column -->
+    <ng-container matColumnDef="bookingPeriodDates">
+        <th mat-header-cell *matHeaderCellDef> bookingPeriodDates </th>
+        <td mat-cell *matCellDef="let element"> {{element.bookingPeriodDates}} </td>
+    </ng-container>
+
+    <!-- invoiceNumber Column -->
+    <ng-container matColumnDef="invoiceNumber">
+        <th mat-header-cell *matHeaderCellDef> invoiceNumber </th>
+        <td mat-cell *matCellDef="let element"> {{element.invoiceNumber}} </td>
+    </ng-container>
+
+    <!-- orderIndex Column -->
+    <ng-container matColumnDef="orderIndex">
+        <th mat-header-cell *matHeaderCellDef> orderIndex </th>
+        <td mat-cell *matCellDef="let element"> {{element.orderIndex}} </td>
+    </ng-container>
+
+    <!-- lineType Column -->
+    <ng-container matColumnDef="lineType">
+        <th mat-header-cell *matHeaderCellDef> lineType </th>
+        <td mat-cell *matCellDef="let element"> {{element.lineType}} </td>
+    </ng-container>
+
+    <!-- itemGroup Column -->
+    <ng-container matColumnDef="itemGroup">
+        <th mat-header-cell *matHeaderCellDef> itemGroup </th>
+        <td mat-cell *matCellDef="let element"> {{element.itemGroup}} </td>
+    </ng-container>
+
+    <!-- itemKey Column -->
+    <ng-container matColumnDef="itemKey">
+        <th mat-header-cell *matHeaderCellDef> itemKey </th>
+        <td mat-cell *matCellDef="let element"> {{element.itemKey}} </td>
+    </ng-container>
+
+    <!-- treatment Column -->
+    <ng-container matColumnDef="treatment">
+        <th mat-header-cell *matHeaderCellDef> treatment </th>
+        <td mat-cell *matCellDef="let element"> {{element.treatment}} </td>
+    </ng-container>
+
+    <!-- treatmentDescription Column -->
+    <ng-container matColumnDef="treatmentDescription">
+        <th mat-header-cell *matHeaderCellDef> treatmentDescription </th>
+        <td mat-cell *matCellDef="let element"> {{element.treatmentDescription}} </td>
+    </ng-container>
+
+    <!-- itemDescription Column -->
+    <ng-container matColumnDef="itemDescription">
+        <th mat-header-cell *matHeaderCellDef> itemDescription </th>
+        <td mat-cell *matCellDef="let element"> {{element.itemDescription}} </td>
+    </ng-container>
+
+    <!-- quantity1 Column -->
+    <ng-container matColumnDef="quantity1">
+        <th mat-header-cell *matHeaderCellDef> quantity1 </th>
+        <td mat-cell *matCellDef="let element"> {{element.quantity1}} </td>
+    </ng-container>
+
+    <!-- quantity2 Column -->
+    <ng-container matColumnDef="quantity2">
+        <th mat-header-cell *matHeaderCellDef> quantity2 </th>
+        <td mat-cell *matCellDef="let element"> {{element.quantity2}} </td>
+    </ng-container>
+
+    <!-- unit1 Column -->
+    <ng-container matColumnDef="unit1">
+        <th mat-header-cell *matHeaderCellDef> unit1 </th>
+        <td mat-cell *matCellDef="let element"> {{element.unit1}} </td>
+    </ng-container>
+
+    <!-- unit1Description Column -->
+    <ng-container matColumnDef="unit1Description">
+        <th mat-header-cell *matHeaderCellDef> unit1Description </th>
+        <td mat-cell *matCellDef="let element"> {{element.unit1Description}} </td>
+    </ng-container>
+
+    <!-- unit2 Column -->
+    <ng-container matColumnDef="unit2">
+        <th mat-header-cell *matHeaderCellDef> unit2 </th>
+        <td mat-cell *matCellDef="let element"> {{element.unit2}} </td>
+    </ng-container>
+
+    <!-- priceUnitDescription Column -->
+    <ng-container matColumnDef="priceUnitDescription">
+        <th mat-header-cell *matHeaderCellDef> priceUnitDescription </th>
+        <td mat-cell *matCellDef="let element"> {{element.priceUnitDescription}} </td>
+    </ng-container>
+
+    <!-- priceUnit Column -->
+    <ng-container matColumnDef="priceUnit">
+        <th mat-header-cell *matHeaderCellDef> priceUnit </th>
+        <td mat-cell *matCellDef="let element"> {{element.priceUnit}} </td>
+    </ng-container>
+
+    <!-- unit2Description Column -->
+    <ng-container matColumnDef="unit2Description">
+        <th mat-header-cell *matHeaderCellDef> unit2Description </th>
+        <td mat-cell *matCellDef="let element"> {{element.unit2Description}} </td>
+    </ng-container>
+
+    <!-- price Column -->
+    <ng-container matColumnDef="price">
+        <th mat-header-cell *matHeaderCellDef> price </th>
+        <td mat-cell *matCellDef="let element"> {{element.price}} </td>
+    </ng-container>
+
+    <!-- valueItemOrderCurrency Column -->
+    <ng-container matColumnDef="valueItemOrderCurrency">
+        <th mat-header-cell *matHeaderCellDef> valueItemOrderCurrency </th>
+        <td mat-cell *matCellDef="let element"> {{element.valueItemOrderCurrency}} </td>
+    </ng-container>
+
+    <!-- journal Column -->
+    <ng-container matColumnDef="journal">
+        <th mat-header-cell *matHeaderCellDef> journal </th>
+        <td mat-cell *matCellDef="let element"> {{element.journal}} </td>
+    </ng-container>
+
+    <!-- calculation Column -->
+    <ng-container matColumnDef="calculation">
+        <th mat-header-cell *matHeaderCellDef> calculation </th>
+        <td mat-cell *matCellDef="let element"> {{element.calculation}} </td>
+    </ng-container>
+
+    <!-- calculationDescription Column -->
+    <ng-container matColumnDef="calculationDescription">
+        <th mat-header-cell *matHeaderCellDef> calculationDescription </th>
+        <td mat-cell *matCellDef="let element"> {{element.calculationDescription}} </td>
+    </ng-container>
+
+    <!-- valueItemBaseCurrency Column -->
+    <ng-container matColumnDef="valueItemBaseCurrency">
+        <th mat-header-cell *matHeaderCellDef> valueItemBaseCurrency </th>
+        <td mat-cell *matCellDef="let element"> {{element.valueItemBaseCurrency}} </td>
+    </ng-container>
+
+    <!-- invoiceOrderLineId Column -->
+    <ng-container matColumnDef="invoiceOrderLineId">
+        <th mat-header-cell *matHeaderCellDef> invoiceOrderLineId </th>
+        <td mat-cell *matCellDef="let element"> {{element.invoiceOrderLineId}} </td>
+    </ng-container>
+
+    <!-- lineIndex1 Column -->
+    <ng-container matColumnDef="lineIndex1">
+        <th mat-header-cell *matHeaderCellDef> lineIndex1 </th>
+        <td mat-cell *matCellDef="let element"> {{element.lineIndex1}} </td>
+    </ng-container>
+
+    <!-- lineIndex2 Column -->
+    <ng-container matColumnDef="lineIndex2">
+        <th mat-header-cell *matHeaderCellDef> lineIndex2 </th>
+        <td mat-cell *matCellDef="let element"> {{element.lineIndex2}} </td>
+    </ng-container>
+
+    <!-- itemGroupDescription Column -->
+    <ng-container matColumnDef="itemGroupDescription">
+        <th mat-header-cell *matHeaderCellDef> itemGroupDescription </th>
+        <td mat-cell *matCellDef="let element"> {{element.itemGroupDescription}} </td>
+    </ng-container>
+
+    <!-- companyId Column -->
+    <ng-container matColumnDef="companyId">
+        <th mat-header-cell *matHeaderCellDef> companyId </th>
+        <td mat-cell *matCellDef="let element"> {{element.companyId}} </td>
+    </ng-container>
+
+    <!-- invoiceId Column -->
+    <ng-container matColumnDef="invoiceId">
+        <th mat-header-cell *matHeaderCellDef> invoiceId </th>
+        <td mat-cell *matCellDef="let element"> {{element.invoiceId}} </td>
+    </ng-container>
+
+    <!-- invoiceOrderId Column -->
+    <ng-container matColumnDef="invoiceOrderId">
+        <th mat-header-cell *matHeaderCellDef> invoiceOrderId </th>
+        <td mat-cell *matCellDef="let element"> {{element.invoiceOrderId}} </td>
+    </ng-container>
+
+    <!-- office Column -->
+    <ng-container matColumnDef="office">
+        <th mat-header-cell *matHeaderCellDef> office </th>
+        <td mat-cell *matCellDef="let element"> {{element.office}} </td>
+    </ng-container>
+
+    <!-- orderNumber Column -->
+    <ng-container matColumnDef="orderNumber">
+        <th mat-header-cell *matHeaderCellDef> orderNumber </th>
+        <td mat-cell *matCellDef="let element"> {{element.orderNumber}} </td>
+    </ng-container>
+
+    <!-- customerForSelection Column -->
+    <ng-container matColumnDef="customerForSelection">
+        <th mat-header-cell *matHeaderCellDef> customerForSelection </th>
+        <td mat-cell *matCellDef="let element"> {{element.customerForSelection}} </td>
+    </ng-container>
+
+    <!-- companyForSelection Column -->
+    <ng-container matColumnDef="companyForSelection">
+        <th mat-header-cell *matHeaderCellDef> companyForSelection </th>
+        <td mat-cell *matCellDef="let element"> {{element.companyForSelection}} </td>
+    </ng-container>
+
+
+    <tr mat-header-row *matHeaderRowDef="displayedColumnsInvoiceOrderLines; sticky: true">
+    </tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumnsInvoiceOrderLines; "
+        (click)="clickRowInvoiceOrderLines(row)" [ngClass]="{'row-is-clicked':row.id == invoiceOrderLinesId}"></tr>
+
+
+</table>
+<mat-paginator #paginator [pageSizeOptions]="[5, 10, 15]" showFirstLastButtons></mat-paginator>

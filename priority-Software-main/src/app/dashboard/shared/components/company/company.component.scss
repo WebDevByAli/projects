@@ -1,0 +1,73 @@
+#header {
+  justify-content: space-between;
+  width: 100vw;
+}
+
+// ******************* Table Header Style
+#btnAdd {
+  color: #68D0FF;
+}
+
+button#btnAdd {
+  border: none;
+  padding: 5px 15px;
+  border-radius: 3px;
+}
+
+button#btnAdd:hover {
+  background-color: #0791d1;
+}
+
+#searchIcon {
+  color: #9DE1FA;
+  border: 1px solid #e0dede;
+  border-radius: 3px;
+  margin-left: 10px;
+}
+
+#btnclearAll {
+  color: #8d8b8b;
+  background-color: transparent;
+  border: none;
+  margin-left: 10px;
+}
+
+#header.mat-icon {
+  padding: 5px 15px;
+}
+
+#btnActie {
+  color: #8d8b8b;
+  background-color: transparent;
+  border: 0.1em solid #e0dede;
+  padding: 0 5px;
+  margin-right: 10px;
+}
+
+button#btnActie {
+  border: none;
+}
+
+#icons {
+  margin-right: 10px;
+  border-left: 1px solid #e0dede;
+}
+
+#icons i {
+  margin-left: 20px;
+  color: #8d8b8b;
+}
+
+// ******************* Tables & Tabs Style height:76vh;
+// ******************* Tables Grid | Tables Details Style height:38vh;
+// ******************* Tabs  Style height:38vh;-> Tabs Table 100%
+.table-grid-container,
+.table-details-container {
+  height: 37vh;
+  width: 100%;
+  overflow: overlay;
+}
+
+.tabs {
+  border-top: 1px solid #7d7d7d;
+}

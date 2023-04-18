@@ -1,0 +1,14 @@
+{
+    "/Companies": {
+      "target": "http://172.27.202.11:8810//web/Entities",
+      "secure": false
+    },
+    "/Addresses": {
+      "target": "http://172.27.202.11:8810//web/Entities",
+      "secure": false
+    },
+    "/ItemGroups": {
+      "target": "http://172.27.202.11:8810//web/Entities",
+      "secure": false
+    }
+  }

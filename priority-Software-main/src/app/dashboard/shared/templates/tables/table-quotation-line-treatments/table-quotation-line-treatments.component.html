@@ -1,0 +1,42 @@
+<table mat-table [dataSource]="dataSourceQuotationLineTreatments">
+    <!-- id Column -->
+    <ng-container matColumnDef="id">
+        <th mat-header-cell *matHeaderCellDef> id. </th>
+        <td mat-cell *matCellDef="let element"> {{element.id}} </td>
+    </ng-container>
+    <!-- url Column -->
+    <ng-container matColumnDef="url">
+        <th mat-header-cell *matHeaderCellDef> url </th>
+        <td mat-cell *matCellDef="let element"> {{element.url}} </td>
+    </ng-container>
+    <!-- quotationNumber Column -->
+    <ng-container matColumnDef="quotationNumber">
+        <th mat-header-cell *matHeaderCellDef> quotationNumber </th>
+        <td mat-cell *matCellDef="let element"> {{element.quotationNumber}} </td>
+    </ng-container>
+    <!-- lineIndex Column -->
+    <ng-container matColumnDef="lineIndex">
+        <th mat-header-cell *matHeaderCellDef> lineIndex </th>
+        <td mat-cell *matCellDef="let element"> {{element.lineIndex}} </td>
+    </ng-container>
+    <!-- treatmentIndex Column -->
+    <ng-container matColumnDef="treatmentIndex">
+        <th mat-header-cell *matHeaderCellDef> treatmentIndex </th>
+        <td mat-cell *matCellDef="let element"> {{element.treatmentIndex}} </td>
+    </ng-container>
+    <!-- treatment Column -->
+    <ng-container matColumnDef="treatment">
+        <th mat-header-cell *matHeaderCellDef> treatment </th>
+        <td mat-cell *matCellDef="let element"> {{element.treatment}} </td>
+    </ng-container>
+
+
+    <tr mat-header-row *matHeaderRowDef="displayedColumnsQuotationLineTreatments; sticky: true">
+    </tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumnsQuotationLineTreatments; "
+        (click)="clickRowQuotationLineTreatments(row)"
+        [ngClass]="{'row-is-clicked':row.id == quotationLineTreatmentsId}"></tr>
+
+
+</table>
+<mat-paginator #paginator [pageSizeOptions]="[5, 10, 15]" showFirstLastButtons></mat-paginator>

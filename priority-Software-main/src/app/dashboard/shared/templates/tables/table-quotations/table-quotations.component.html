@@ -1,0 +1,66 @@
+<table mat-table [dataSource]="dataSourceQuotations">
+    <!-- id Column -->
+    <ng-container matColumnDef="id">
+        <th mat-header-cell *matHeaderCellDef> id. </th>
+        <td mat-cell *matCellDef="let element"> {{element.id}} </td>
+    </ng-container>
+    <!-- url Column -->
+    <ng-container matColumnDef="url">
+        <th mat-header-cell *matHeaderCellDef> url </th>
+        <td mat-cell *matCellDef="let element"> {{element.url}} </td>
+    </ng-container>
+    <!-- quotationNumber Column -->
+    <ng-container matColumnDef="quotationNumber">
+        <th mat-header-cell *matHeaderCellDef> quotationNumber </th>
+        <td mat-cell *matCellDef="let element"> {{element.quotationNumber}} </td>
+    </ng-container>
+    <!-- creationDate Column -->
+    <ng-container matColumnDef="creationDate">
+        <th mat-header-cell *matHeaderCellDef> creationDate </th>
+        <td mat-cell *matCellDef="let element"> {{element.creationDate}} </td>
+    </ng-container>
+    <!-- quotationStatus Column -->
+    <ng-container matColumnDef="quotationStatus">
+        <th mat-header-cell *matHeaderCellDef> quotationStatus </th>
+        <td mat-cell *matCellDef="let element"> {{element.quotationStatus}} </td>
+    </ng-container>
+    <!-- customerReference Column -->
+    <ng-container matColumnDef="customerReference">
+        <th mat-header-cell *matHeaderCellDef> customerReference </th>
+        <td mat-cell *matCellDef="let element"> {{element.customerReference}} </td>
+    </ng-container>
+    <!-- deliveryDate Column -->
+    <ng-container matColumnDef="deliveryDate">
+        <th mat-header-cell *matHeaderCellDef> deliveryDate </th>
+        <td mat-cell *matCellDef="let element"> {{element.deliveryDate}} </td>
+    </ng-container>
+    <!-- currency Column -->
+    <ng-container matColumnDef="currency">
+        <th mat-header-cell *matHeaderCellDef> currency </th>
+        <td mat-cell *matCellDef="let element"> {{element.currency}} </td>
+    </ng-container>
+    <!-- customer Column -->
+    <ng-container matColumnDef="customer">
+        <th mat-header-cell *matHeaderCellDef> customer </th>
+        <td mat-cell *matCellDef="let element"> {{element.customer}} </td>
+    </ng-container>
+    <!-- valueItemQuotatCurrency Column -->
+    <ng-container matColumnDef="valueItemQuotatCurrency">
+        <th mat-header-cell *matHeaderCellDef> valueItemQuotatCurrency </th>
+        <td mat-cell *matCellDef="let element"> {{element.valueItemQuotatCurrency}} </td>
+    </ng-container>
+    <!-- quotationStatusDescription Column -->
+    <ng-container matColumnDef="quotationStatusDescription">
+        <th mat-header-cell *matHeaderCellDef> quotationStatusDescription </th>
+        <td mat-cell *matCellDef="let element"> {{element.quotationStatusDescription}} </td>
+    </ng-container>
+
+
+    <tr mat-header-row *matHeaderRowDef="displayedColumnsQuotations; sticky: true">
+    </tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumnsQuotations; " (click)="clickRowQuotations(row)"
+        [ngClass]="{'row-is-clicked':row.id == quotationsId}"></tr>
+
+
+</table>
+<mat-paginator #paginator [pageSizeOptions]="[5, 10, 15]" showFirstLastButtons></mat-paginator>

@@ -1,0 +1,45 @@
+.margin{
+  width: 100%;
+  background: rgb(210, 240, 251);
+  height:20%;
+}
+.content{
+    margin-top:-18px;
+    height: 100%;
+    background: rgb(210, 240, 251);
+    background: linear-gradient(180deg, rgba(210, 240, 251, 1) 0%, rgba(169, 227, 249, 1) 92%);
+  
+}
+#loginForm {
+    margin-top: 20px;
+    width: 30%;
+    width: 350px;
+    border: 1px;
+    border-color: #b6262e;
+    border-style: solid;
+    background-color: #9DE1FA;
+    box-shadow: chocolate;
+    border-radius: 12px;
+  }
+  
+  #login {
+    font-size: 32px;
+    text-align: center;
+  }
+  
+  #loginBtn {
+    text-align: center;
+  }
+  
+  .label {
+    font-size: 20px;
+    margin: 10px 0px;
+  }
+  
+  
+  button#loginButton {
+    background-color: #9DE1FA;
+    border-color: #ffffff80;
+  }
+//   #9DE1FA
+//   #68D0FF

@@ -1,0 +1,49 @@
+#header {
+  justify-content: space-between;
+  width: 100vw;
+}
+
+#header i {
+  color: #8d8b8b;
+}
+
+// ******************* Page Header Style
+#title-subtitle ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+#title,
+#subtitle {
+  color: #68D0FF;
+}
+
+#title {
+  font-weight: 500;
+  font-size: 21px;
+  margin: 0px 5px;
+}
+
+#subtitle {
+  font-weight: 300;
+  font-size: 18px;
+}
+
+#header select {
+  border: none;
+}
+
+#filter,
+#automations,
+#afdrukken,
+#icons {
+  margin: 0px 5px;
+  border-right: 1px solid #e0dede;
+}
+
+#help i,
+#icons i {
+  margin-right: 10px;
+}

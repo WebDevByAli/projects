@@ -1,0 +1,49 @@
+<mat-toolbar>
+    <!-- Nav bar UP -->
+    <mat-toolbar-row id="navbar-up">
+        <!-- LOGO -->
+        <span id="logo">priority.</span>
+        <span class="spacer"></span>
+
+        <!-- Search -->
+        <div class="search-navbar-form-field">
+            <div class="input-group "> <input type="text" class="form-control input-text"
+                    placeholder="Zoek naar klanten, onderdelen, documenten en meer">
+                <div class="input-group-append ms-1"> <button class="btn btn-search" type="button"><i
+                            class="fa fa-search" aria-hidden="true"></i></button> </div>
+            </div>
+        </div>
+
+        <!-- Search bar -->
+        <!-- <mat-form-field class="search-navbar-form-field">
+            <input matInput type="text" [(ngModel)]="value">
+            <button mat-icon-button>
+                <mat-icon>search</mat-icon>
+            </button>
+        </mat-form-field> -->
+        <span class="spacer"></span>
+        <!-- USERNAME -->
+        <span id="userName">luco</span>
+        <!-- HAMBURGER  -->
+        <button mat-icon-button>
+            <mat-icon>menu</mat-icon>
+        </button>
+    </mat-toolbar-row>
+    <!-- Nav bar Down -->
+    <mat-toolbar-row id="navbar-down">
+        <!-- Menu Nav bar Down -->
+        <div class="menu-navbar-down">
+            <a mat-button>
+                <mat-icon>search</mat-icon>
+            </a>
+            <a mat-button (click)="navToCompanies()">Companies</a>
+            <a mat-button (click)="navToItemGroups()">ItemGroups</a>
+            <a mat-button (click)="navToAddresses()">Addresses</a>
+        </div>
+        <!-- Logo Nav bar Down -->
+        <div class="logo-navbar-down">
+            <a mat-button (click)="logout()">Priority Software BE</a>
+        </div>
+
+    </mat-toolbar-row>
+</mat-toolbar>

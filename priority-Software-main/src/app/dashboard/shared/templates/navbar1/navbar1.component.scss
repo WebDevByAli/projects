@@ -1,0 +1,42 @@
+.spacer {
+  flex: 1 1 auto;
+}
+
+#logo {
+  font-family: 'Kodchasan', sans-serif;
+  color: rgb(0, 0, 0);
+  margin: 5px 0px;
+}
+
+#userName {
+  font-weight: 300;
+  font-size: 18px;
+}
+
+#navbar-up {
+  color: #eeee;
+  height: 6vh;
+  background-color: #68D0FF;
+}
+
+#navbar-down {
+  height: 6vh;
+  background-color: #E2E9EC;
+  justify-content: space-between;
+
+}
+
+#navbar-down a {
+  border-right: 1px solid rgb(200, 200, 200);
+  border-radius: 0px;
+  border-collapse: 1px;
+  color: #525252;
+  font-weight: 200;
+}
+
+.logo-navbar-down a {
+  border: 0px;
+  background-color: #68D0FF;
+  height: 30px;
+  font-weight: 400;
+}

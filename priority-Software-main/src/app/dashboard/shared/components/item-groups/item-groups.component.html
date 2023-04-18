@@ -1,0 +1,53 @@
+<!-- Header -->
+<app-navbar2></app-navbar2>
+<!-- Page Header  -->
+<app-page-header (isvisibleData)="getIsVisible($event)" [title]="title" [subTitleA]="subTitle"></app-page-header>
+<!-- table Header -->
+<mat-toolbar-row style="height:6vmin;">
+    <div class="d-flex align-items-center" id="header">
+        <div class="d-flex align-items-center">
+            <button id="btnAdd" style="background-color:#68D0FF;color:#FFFFFF"><i class="fa-solid fa-plus me-2 "
+                    style="color:#FFFFFF"></i>Nieuw</button>
+            <mat-icon id="searchIcon">search</mat-icon>
+            <button id="btnclearAll"><i class="fa-solid fa-lg me-2 fa-eraser"></i>Clear all</button>
+
+        </div>
+        <div class="d-flex align-items-center">
+            <div class="d-flex align-items-center" id="btnActie">
+                <button id="btnActie">Acties
+                    <i class="fa-solid fa-ellipsis"></i></button>
+            </div>
+            <div id="icons">
+                <i class="fa-solid fa-lg fa-rotate-left"></i>
+                <i class="fa-solid fa-lg fa-trash-can"></i>
+                <i class="fa-solid fa-lg fa-share-nodes"></i>
+                <i class="fa-solid fa-lg fa-bell"></i>
+            </div>
+
+        </div>
+    </div>
+</mat-toolbar-row>
+<!-- Tables & Tabs-->
+<div class="content" style="height:76vh;">
+    <!-- Table ItemGoups -->
+    <div class="table-grid-container" *ngIf="isVisible">
+        <!-- Tables itemGoup -->
+        <app-table-item-groups (itemGroupsIdData)="clickRowItemGroups($event)"> </app-table-item-groups>
+
+    </div>
+    <div class="table-details-container" *ngIf="!isVisible">
+        <!-- Company Details-->
+        <div class="tabel-left">
+            <div class="dataDetails">
+
+            </div>
+        </div>
+
+    </div>
+    <!-- Table Items  -->
+    <div class="tabs">
+        <app-table-items [dataSourceItems]="dataSourceItems" (customerContactIdData)="clickRowItems($event)">
+        </app-table-items>
+
+    </div>
+</div>

@@ -1,0 +1,53 @@
+table {
+  width: 100vw;
+}
+
+.mat-table-sticky {
+  background: #efefef;
+  opacity: 1;
+}
+
+.mat-column-filler {
+  padding: 0 4px;
+  font-size: 10px;
+  text-align: center;
+}
+
+.mat-header-cell {
+  text-align: center;
+}
+
+.mat-header-cell,
+.mat-cell {
+  height: 16px;
+  text-align: left;
+  min-width: 80px;
+  box-sizing: border-box;
+  border-right: 1px solid #e1dfdf;
+  padding-left: 10px;
+}
+
+.mat-row .mat-cell {
+  cursor: pointer;
+}
+
+.row-is-clicked {
+  background-color: #b3d6e7;
+}
+
+.mat-row:hover .mat-cell {
+  background-color: #ddd9d9;
+}
+
+tr.mat-header-row {
+  height: 30px;
+}
+
+tr.mat-row {
+  height: 25px;
+}
+
+
+.mat-tab-group {
+  border-top: 1px solid #7d7d7d;
+}

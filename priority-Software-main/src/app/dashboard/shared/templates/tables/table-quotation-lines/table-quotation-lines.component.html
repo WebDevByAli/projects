@@ -1,0 +1,46 @@
+<table mat-table [dataSource]="dataSourceQuotationLines">
+    <!-- id Column -->
+    <ng-container matColumnDef="id">
+        <th mat-header-cell *matHeaderCellDef> id. </th>
+        <td mat-cell *matCellDef="let element"> {{element.id}} </td>
+    </ng-container>
+    <!-- url Column -->
+    <ng-container matColumnDef="url">
+        <th mat-header-cell *matHeaderCellDef> url </th>
+        <td mat-cell *matCellDef="let element"> {{element.url}} </td>
+    </ng-container>
+    <!-- quotationNumber Column -->
+    <ng-container matColumnDef="quotationNumber">
+        <th mat-header-cell *matHeaderCellDef> quotationNumber </th>
+        <td mat-cell *matCellDef="let element"> {{element.quotationNumber}} </td>
+    </ng-container>
+    <!-- lineIndex Column -->
+    <ng-container matColumnDef="lineIndex">
+        <th mat-header-cell *matHeaderCellDef> lineIndex </th>
+        <td mat-cell *matCellDef="let element"> {{element.lineIndex}} </td>
+    </ng-container>
+    <!-- itemGroup Column -->
+    <ng-container matColumnDef="itemGroup">
+        <th mat-header-cell *matHeaderCellDef> itemGroup </th>
+        <td mat-cell *matCellDef="let element"> {{element.itemGroup}} </td>
+    </ng-container>
+    <!-- itemKey Column -->
+    <ng-container matColumnDef="itemKey">
+        <th mat-header-cell *matHeaderCellDef> itemKey </th>
+        <td mat-cell *matCellDef="let element"> {{element.itemKey}} </td>
+    </ng-container>
+    <!-- deliveryDate Column -->
+    <ng-container matColumnDef="deliveryDate">
+        <th mat-header-cell *matHeaderCellDef> deliveryDate </th>
+        <td mat-cell *matCellDef="let element"> {{element.deliveryDate}} </td>
+    </ng-container>
+
+
+    <tr mat-header-row *matHeaderRowDef="displayedColumnsQuotationLines; sticky: true">
+    </tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumnsQuotationLines; " (click)="clickRowQuotationLines(row)"
+        [ngClass]="{'row-is-clicked':row.id == quotationLinesId}"></tr>
+
+
+</table>
+<mat-paginator #paginator [pageSizeOptions]="[5, 10, 15]" showFirstLastButtons></mat-paginator>

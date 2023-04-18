@@ -1,0 +1,38 @@
+<table mat-table [dataSource]="dataSourceCustomerContacts">
+
+    <!-- id Column -->
+    <ng-container matColumnDef="id">
+        <th mat-header-cell *matHeaderCellDef> id. </th>
+        <td mat-cell *matCellDef="let element"> {{element.id}} </td>
+    </ng-container>
+
+    <!-- Name Column -->
+    <ng-container matColumnDef="name">
+        <th mat-header-cell *matHeaderCellDef> Naam </th>
+        <td mat-cell *matCellDef="let element"> {{element.name}} </td>
+    </ng-container>
+    <!-- firstName Column -->
+    <ng-container matColumnDef="firstName">
+        <th mat-header-cell *matHeaderCellDef> Voornaam </th>
+        <td mat-cell *matCellDef="let element"> {{element.firstName}} </td>
+    </ng-container>
+    <!-- customer Column -->
+    <ng-container matColumnDef="customer">
+        <th mat-header-cell *matHeaderCellDef> Adrescode </th>
+        <td mat-cell *matCellDef="let element"> {{element.customer}} </td>
+    </ng-container>
+    <!-- url Column -->
+    <ng-container matColumnDef="url">
+        <th mat-header-cell *matHeaderCellDef> Url </th>
+        <td mat-cell *matCellDef="let element"> {{element.url}} </td>
+    </ng-container>
+
+
+    <tr mat-header-row *matHeaderRowDef="displayedColumnsCustomerContacts; sticky: true">
+    </tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumnsCustomerContacts;" (click)="clickRowCustomerContact(row)"
+        [ngClass]="{'row-is-clicked':row.id == customerContactId}"></tr>
+</table>
+<mat-paginator #paginator [pageSizeOptions]="[5, 10, 15]" showFirstLastButtons>
+</mat-paginator>
+<h3 *ngIf="this.dataSourceCustomerContacts.data.length == 0">{{noData}}</h3>

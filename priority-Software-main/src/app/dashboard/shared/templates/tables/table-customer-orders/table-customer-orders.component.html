@@ -1,0 +1,88 @@
+<table mat-table [dataSource]="dataSourceCustomerOrders">
+    <!-- id Column -->
+    <ng-container matColumnDef="id">
+        <th mat-header-cell *matHeaderCellDef> id. </th>
+        <td mat-cell *matCellDef="let element"> {{element.id}} </td>
+    </ng-container>
+    <!-- url Column -->
+    <ng-container matColumnDef="url">
+        <th mat-header-cell *matHeaderCellDef> url </th>
+        <td mat-cell *matCellDef="let element"> {{element.url}} </td>
+    </ng-container>
+
+    <!-- orderType Column -->
+    <ng-container matColumnDef="orderType">
+        <th mat-header-cell *matHeaderCellDef> orderType </th>
+        <td mat-cell *matCellDef="let element"> {{element.orderType}} </td>
+    </ng-container>
+
+    <!-- orderTypeDescription Column -->
+    <ng-container matColumnDef="orderTypeDescription">
+        <th mat-header-cell *matHeaderCellDef> orderTypeDescription </th>
+        <td mat-cell *matCellDef="let element"> {{element.orderTypeDescription}} </td>
+    </ng-container>
+
+    <!-- creationDate Column -->
+    <ng-container matColumnDef="creationDate">
+        <th mat-header-cell *matHeaderCellDef> creationDate </th>
+        <td mat-cell *matCellDef="let element"> {{element.creationDate}} </td>
+    </ng-container>
+
+    <!-- customerReference Column -->
+    <ng-container matColumnDef="customerReference">
+        <th mat-header-cell *matHeaderCellDef> customerReference </th>
+        <td mat-cell *matCellDef="let element"> {{element.customerReference}} </td>
+    </ng-container>
+
+    <!-- orderStatus Column -->
+    <ng-container matColumnDef="orderStatus">
+        <th mat-header-cell *matHeaderCellDef> orderStatus </th>
+        <td mat-cell *matCellDef="let element"> {{element.orderStatusDescription}} </td>
+    </ng-container>
+
+    <!-- orderStatusDescription Column -->
+    <ng-container matColumnDef="orderStatusDescription">
+        <th mat-header-cell *matHeaderCellDef> orderStatusDescription </th>
+        <td mat-cell *matCellDef="let element"> {{element.orderStatusDescription}} </td>
+    </ng-container>
+
+    <!-- deliveryDate Column -->
+    <ng-container matColumnDef="deliveryDate">
+        <th mat-header-cell *matHeaderCellDef> deliveryDate </th>
+        <td mat-cell *matCellDef="let element"> {{element.deliveryDate}} </td>
+    </ng-container>
+    <!-- customer Column -->
+    <ng-container matColumnDef="customer">
+        <th mat-header-cell *matHeaderCellDef> customer </th>
+        <td mat-cell *matCellDef="let element"> {{element.customer}} </td>
+    </ng-container>
+    <!-- realDeliveryDate Column -->
+    <ng-container matColumnDef="realDeliveryDate">
+        <th mat-header-cell *matHeaderCellDef> realDeliveryDate </th>
+        <td mat-cell *matCellDef="let element"> {{element.realDeliveryDate}} </td>
+    </ng-container>
+    <!-- currency Column -->
+    <ng-container matColumnDef="currency">
+        <th mat-header-cell *matHeaderCellDef> currency </th>
+        <td mat-cell *matCellDef="let element"> {{element.currency}} </td>
+    </ng-container>
+    <!-- orderNumber Column -->
+    <ng-container matColumnDef="orderNumber">
+        <th mat-header-cell *matHeaderCellDef> orderNumber </th>
+        <td mat-cell *matCellDef="let element"> {{element.orderNumber}} </td>
+    </ng-container>
+    <!-- valueItemOrderCurrency Column -->
+    <ng-container matColumnDef="valueItemOrderCurrency">
+        <th mat-header-cell *matHeaderCellDef> valueItemOrderCurrency </th>
+        <td mat-cell *matCellDef="let element"> {{element.valueItemOrderCurrency}} </td>
+    </ng-container>
+
+
+    <tr mat-header-row *matHeaderRowDef="displayedColumnsCustomerOrders; sticky: true">
+    </tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumnsCustomerOrders; " (click)="clickRowCustomerOrders(row)"
+        [ngClass]="{'row-is-clicked':row.id == customerOrdersId}"></tr>
+
+
+</table>
+<mat-paginator #paginator [pageSizeOptions]="[5, 10, 15]" showFirstLastButtons></mat-paginator>

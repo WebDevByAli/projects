@@ -1,0 +1,122 @@
+body{
+    font-family: SST,helvetica,arial,sans-serif;
+    margin:0;
+    /*background-color: gray;*/
+}
+.sony{
+    background-color: black;
+    color: white;
+    height:20px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+.psLogo{
+    height: 100%;
+}
+.navBar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+ul{
+    display:flex;
+    gap: 5px;
+    /*background-color: yellow;*/
+    list-style-type: none;
+    flex-direction: row;
+    justify-content: flex-start;
+    /*justify-content: space-between;*/
+}
+.links{
+    /*background-color: blue;*/
+    display: flex;
+    width: 70%;
+    height: 50px;
+    /*background-color: blue;*/
+    justify-content: flex-start;
+}
+.links li{
+display: flex;
+    justify-content: space-between;
+    margin-top: -8%;
+    /*background-color: blue;*/
+}
+
+.logo{
+    display: flex;
+    justify-content: flex-start;
+    height: 100%;
+}
+.navBar > .rechts{
+    /*background-color: green;*/
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.rechts{
+    display: flex;
+    margin-top: -1%;
+    /*background-color: green;*/
+    height: 0%;
+    width: fit-content;
+}
+.zoekBalk{
+font-size: 20px;
+}
+
+.bigpic{
+    display: flex;
+    flex-wrap:wrap ;
+    background-size: cover;
+    background-position: center;
+    background-image: url("assets/deel-1/hero-banner.png");
+    min-height: 100vh;
+    /*background-image:"assets/deel-1/hero-banner.png";*/
+}
+
+.groteFoto{
+    width: 100%;
+    height: 50%;
+}
+/* div waar 6 images in zitten */
+.zesFotos{
+    text-align: center;
+}
+.card {
+    opacity: 0.5;
+    width: 5%;
+    height: 5%;
+}
+.card{
+    width: 15%;
+}
+.cards :hover{
+    width: 16%;
+    border: 1px solid black;
+    opacity:1.0;
+}
+
+/*this month */
+.thisMonth{
+    width:100%;
+    height: 100vh;
+    background-image: url("assets/deel-1/far-cry-banner.png");
+    background-size: cover;
+
+}
+.part-two{
+    width: 100%;
+    text-align: center;
+}
+
+
+/* background-size cover*/
+/*possitie center*/
+/*possitie center*/
+/*flex wrap : wrap*/

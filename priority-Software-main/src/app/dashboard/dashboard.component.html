@@ -1,0 +1,39 @@
+<app-navbar1></app-navbar1>
+<div class="d-flex" style="height:100% ;background: rgb(210,240,251);
+background: linear-gradient(180deg, rgba(210,240,251,1) 0%, rgba(169,227,249,1) 92%);">
+    <div class="container mt-5 ">
+        <div class="row">
+
+            <div class="col-12" style="height:60px;">
+                <div class="container justify-content-center">
+                    <!-- Search -->
+                    <div class="row">
+                        <div class="col-md-8">
+                            <div class="input-group mb-3"> <input type="text" class="form-control input-text"
+                                    placeholder="Zoek naar klanten, onderdelen, documenten en meer">
+                                <div class="input-group-append ms-1"> <button class="btn btn-outline-secondary btn-lg"
+                                        type="button"><i class="fa fa-search" aria-hidden="true"></i></button> </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+        <div class="row kaart">
+            <div class="col-3 companies" routerLink="companies">
+                <i class="fa-solid fa-rectangle-list"></i>
+                <p>companies</p>
+            </div>
+            <div class="col-3 itemGroup" routerLink="itemGroups">
+                <i class="fa-solid fa-rectangle-list"></i>
+                <p>itemGroups</p>
+            </div>
+            <div class="col-3 adresses" routerLink="addresses">
+                <i class="fa-solid fa-rectangle-list"></i>
+                <p>adresses</p>
+            </div>
+        </div>
+    </div>
+</div>

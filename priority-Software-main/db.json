@@ -1,0 +1,165 @@
+{
+  "companies":[
+    {
+      "id": 1,
+      "url": "http://mso-cli-tst-01.optimizegroup.be:8810/web/Entities/Companies/1",
+      "companyAddress": "ALPHA",
+      "company": "019",
+      "baseCurrency": "EUR",
+      "companyId": 1
+    },
+    {
+      "id": 2,
+      "url": "http://mso-cli-tst-01.optimizegroup.be:8810/web/Entities/Companies/2",
+      "companyAddress": "STEELEXPRESS",
+      "company": "054",
+      "baseCurrency": "EUR",
+      "companyId": 2
+    },
+    {
+      "id": 3,
+      "url": "http://mso-cli-tst-01.optimizegroup.be:8810/web/Entities/Companies/3",
+      "companyAddress": "AGV NSU",
+      "company": "071",
+      "baseCurrency": "EUR",
+      "companyId": 3
+    },
+    {
+      "id": 4,
+      "url": "http://mso-cli-tst-01.optimizegroup.be:8810/web/Entities/Companies/4",
+      "companyAddress": "BOROTRANS",
+      "company": "127",
+      "baseCurrency": "EUR",
+      "companyId": 4
+    },
+    {
+      "id": 5,
+      "url": "http://mso-cli-tst-01.optimizegroup.be:8810/web/Entities/Companies/5",
+      "companyAddress": "BOUWSTAAL",
+      "company": "128",
+      "baseCurrency": "EUR",
+      "companyId": 5
+    },
+    {
+      "id": 6,
+      "url": "http://mso-cli-tst-01.optimizegroup.be:8810/web/Entities/Companies/6",
+      "companyAddress": "PAS",
+      "company": "166",
+      "baseCurrency": "EUR",
+      "companyId": 6
+    },
+    {
+      "id": 7,
+      "url": "http://mso-cli-tst-01.optimizegroup.be:8810/web/Entities/Companies/7",
+      "companyAddress": "PADF-PARIS",
+      "company": "173",
+      "baseCurrency": "EUR",
+      "companyId": 7
+    },
+    {
+      "id": 8,
+      "url": "http://mso-cli-tst-01.optimizegroup.be:8810/web/Entities/Companies/8",
+      "companyAddress": "COGEAF",
+      "company": "214",
+      "baseCurrency": "EUR",
+      "companyId": 8
+    },
+    {
+      "id": 9,
+      "url": "http://mso-cli-tst-01.optimizegroup.be:8810/web/Entities/Companies/9",
+      "companyAddress": "ROSSEEL",
+      "company": "234",
+      "baseCurrency": "EUR",
+      "companyId": 9
+    },
+    {
+      "id": 10,
+      "url": "http://mso-cli-tst-01.optimizegroup.be:8810/web/Entities/Companies/10",
+      "companyAddress": "PADL",
+      "company": "282",
+      "baseCurrency": "EUR",
+      "companyId": 10
+    },
+    {
+      "id": 11,
+      "url": "http://mso-cli-tst-01.optimizegroup.be:8810/web/Entities/Companies/11",
+      "companyAddress": "AS GMBH",
+      "company": "310",
+      "baseCurrency": "EUR",
+      "companyId": 11
+    },
+    {
+      "id": 12,
+      "url": "http://mso-cli-tst-01.optimizegroup.be:8810/web/Entities/Companies/12",
+      "companyAddress": "AGV THUER",
+      "company": "318",
+      "baseCurrency": "EUR",
+      "companyId": 12
+    },
+    {
+      "id": 13,
+      "url": "http://mso-cli-tst-01.optimizegroup.be:8810/web/Entities/Companies/13",
+      "companyAddress": "PAP",
+      "company": "377",
+      "baseCurrency": "EUR",
+      "companyId": 13
+    },
+    {
+      "id": 14,
+      "url": "http://mso-cli-tst-01.optimizegroup.be:8810/web/Entities/Companies/14",
+      "companyAddress": "DAMWAND-NL",
+      "company": "428",
+      "baseCurrency": "EUR",
+      "companyId": 14
+    },
+    {
+      "id": 15,
+      "url": "http://mso-cli-tst-01.optimizegroup.be:8810/web/Entities/Companies/15",
+      "companyAddress": "LMW",
+      "company": "462",
+      "baseCurrency": "EUR",
+      "companyId": 15
+    },
+    {
+      "id": 16,
+      "url": "http://mso-cli-tst-01.optimizegroup.be:8810/web/Entities/Companies/16",
+      "companyAddress": "LAMOT",
+      "company": "502",
+      "baseCurrency": "EUR",
+      "companyId": 16
+    },
+    {
+      "id": 17,
+      "url": "http://mso-cli-tst-01.optimizegroup.be:8810/web/Entities/Companies/17",
+      "companyAddress": "LEDUC",
+      "company": "516",
+      "baseCurrency": "EUR",
+      "companyId": 17
+    },
+    {
+      "id": 18,
+      "url": "http://mso-cli-tst-01.optimizegroup.be:8810/web/Entities/Companies/18",
+      "companyAddress": "LIMBUSTAAL",
+      "company": "518",
+      "baseCurrency": "EUR",
+      "companyId": 18
+    },
+    {
+      "id": 19,
+      "url": "http://mso-cli-tst-01.optimizegroup.be:8810/web/Entities/Companies/19",
+      "companyAddress": "PASNL",
+      "company": "532",
+      "baseCurrency": "EUR",
+      "companyId": 19
+    },
+    {
+      "id": 20,
+      "url": "http://mso-cli-tst-01.optimizegroup.be:8810/web/Entities/Companies/20",
+      "companyAddress": "LOMMAERT-BORN",
+      "company": "538",
+      "baseCurrency": "EUR",
+      "companyId": 20
+    }
+  ]
+}
+

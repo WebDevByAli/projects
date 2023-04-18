@@ -1,0 +1,41 @@
+<table mat-table [dataSource]="dataSourceSalesHistory">
+    <!-- itemGroup Column -->
+    <ng-container matColumnDef="itemGroup">
+        <th mat-header-cell *matHeaderCellDef> itemGroup. </th>
+        <td mat-cell *matCellDef="let element"> {{element.itemGroup}} </td>
+    </ng-container>
+    <!-- itemGroupDescription Column -->
+    <ng-container matColumnDef="itemGroupDescription">
+        <th mat-header-cell *matHeaderCellDef> itemGroupDescription </th>
+        <td mat-cell *matCellDef="let element"> {{element.itemGroupDescription}} </td>
+    </ng-container>
+    <!-- itemKey Column -->
+    <ng-container matColumnDef="itemKey">
+        <th mat-header-cell *matHeaderCellDef> itemKey </th>
+        <td mat-cell *matCellDef="let element"> {{element.itemKey}} </td>
+    </ng-container>
+    <!-- itemDescription Column -->
+    <ng-container matColumnDef="itemDescription">
+        <th mat-header-cell *matHeaderCellDef> itemDescription </th>
+        <td mat-cell *matCellDef="let element"> {{element.itemDescription}} </td>
+    </ng-container>
+    <!-- customer Column -->
+    <ng-container matColumnDef="customer">
+        <th mat-header-cell *matHeaderCellDef> customer </th>
+        <td mat-cell *matCellDef="let element"> {{element.customer}} </td>
+    </ng-container>
+    <!-- favouriteItem Column -->
+    <ng-container matColumnDef="favouriteItem">
+        <th mat-header-cell *matHeaderCellDef> favouriteItem </th>
+        <td mat-cell *matCellDef="let element"> {{element.favouriteItem}} </td>
+    </ng-container>
+
+
+    <tr mat-header-row *matHeaderRowDef="displayedColumnsSalesHistory; sticky: true">
+    </tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumnsSalesHistory; " (click)="clickRowSalesHistory(row)"
+        [ngClass]="{'row-is-clicked':row.id == salesHistoryId}"></tr>
+
+
+</table>
+<mat-paginator #paginator [pageSizeOptions]="[5, 10, 15]" showFirstLastButtons></mat-paginator>

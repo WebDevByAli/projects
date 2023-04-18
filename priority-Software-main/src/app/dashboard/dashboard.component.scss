@@ -1,0 +1,82 @@
+.kaart{
+ margin-left: 3vh;
+}
+// icon
+.fa-rectangle-list {
+  margin-top: 25%;
+  font-size: 100px;
+  color: rgb(0, 242, 255);
+}
+
+// companies
+.companies p {
+  padding-left: 30%;
+  color: white;
+  width: fit-content;
+}
+
+.companies i {
+  padding-left: 15%;
+}
+
+.companies {
+  margin-left: 2%;
+
+  border: 1px solid black !important;
+  width: 170px;
+  height: 170px;
+  background-color: rgb(11, 44, 176);
+}
+
+.companies:hover {
+  width: 170px;
+  height: 190px;
+}
+
+// itemGroup
+.itemGroup p {
+  padding-left: 30%;
+  color: white;
+  width: fit-content;
+}
+
+.itemGroup i {
+  padding-left: 15%;
+}
+
+.itemGroup {
+  margin-left: 2%;
+  border: 1px solid black !important;
+  width: 170px;
+  height: 170px;
+  background-color: rgb(11, 44, 176);
+}
+
+.itemGroup:hover {
+  width: 170px;
+  height: 190px;
+}
+
+// addresses
+.adresses p {
+  padding-left: 30%;
+  color: white;
+  width: fit-content;
+}
+
+.adresses i {
+  padding-left: 15%;
+}
+
+.adresses {
+  margin-left: 2%;
+  border: 1px solid black !important;
+  width: 170px;
+  height: 170px;
+  background-color: rgb(11, 44, 176);
+}
+
+.adresses:hover {
+  width: 170px;
+  height: 190px;
+}

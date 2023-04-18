@@ -1,0 +1,30 @@
+<div class="margin"></div>
+<div class="content">
+    <div class="container mt-3 p-5" id="loginForm">
+
+        <div class="row" id="login">
+            <div class="col-12">Login</div>
+        </div>
+        <!-- email form -->
+        <div class="row mt-5">
+            <div class=col-12>
+                <div class="label">Email address </div>
+                <input type="text" #email placeholder="email" class="form-control">
+            </div>
+        </div>
+        <!-- password form -->
+        <div class="row ">
+            <div class="col-12">
+                <div class="label">password</div>
+                <input type="password" #password  name ="passwor"class="form-control"><br>
+            </div>
+        </div>
+        <!-- login button-->
+        <div class="row ">
+    
+            <div class="col-12" id="loginBtn">
+                <button (click)="login(email.value, password.value)" id="signupButton" class="btn btn-primary">signup</button>
+            </div>
+    
+        </div>
+</div>
